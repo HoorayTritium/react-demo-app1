@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-demo-app/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/react-demo-app/static/js/main.50d4a697.chunk.js",
-    "main.js.map": "/react-demo-app/static/js/main.50d4a697.chunk.js.map",
-    "runtime-main.js": "/react-demo-app/static/js/runtime-main.2500fee5.js",
-    "runtime-main.js.map": "/react-demo-app/static/js/runtime-main.2500fee5.js.map",
-    "static/js/2.623aef4c.chunk.js": "/react-demo-app/static/js/2.623aef4c.chunk.js",
-    "static/js/2.623aef4c.chunk.js.map": "/react-demo-app/static/js/2.623aef4c.chunk.js.map",
-    "static/js/3.765be3da.chunk.js": "/react-demo-app/static/js/3.765be3da.chunk.js",
-    "static/js/3.765be3da.chunk.js.map": "/react-demo-app/static/js/3.765be3da.chunk.js.map",
-    "index.html": "/react-demo-app/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/react-demo-app/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.623aef4c.chunk.js.LICENSE.txt": "/react-demo-app/static/js/2.623aef4c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-demo-app/static/media/logo.6ce24c58.svg"
+    "main.css": "/react-demo-app1/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/react-demo-app1/static/js/main.50d4a697.chunk.js",
+    "main.js.map": "/react-demo-app1/static/js/main.50d4a697.chunk.js.map",
+    "runtime-main.js": "/react-demo-app1/static/js/runtime-main.30fd57f7.js",
+    "runtime-main.js.map": "/react-demo-app1/static/js/runtime-main.30fd57f7.js.map",
+    "static/js/2.623aef4c.chunk.js": "/react-demo-app1/static/js/2.623aef4c.chunk.js",
+    "static/js/2.623aef4c.chunk.js.map": "/react-demo-app1/static/js/2.623aef4c.chunk.js.map",
+    "static/js/3.765be3da.chunk.js": "/react-demo-app1/static/js/3.765be3da.chunk.js",
+    "static/js/3.765be3da.chunk.js.map": "/react-demo-app1/static/js/3.765be3da.chunk.js.map",
+    "index.html": "/react-demo-app1/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/react-demo-app1/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.623aef4c.chunk.js.LICENSE.txt": "/react-demo-app1/static/js/2.623aef4c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-demo-app1/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2500fee5.js",
+    "static/js/runtime-main.30fd57f7.js",
     "static/js/2.623aef4c.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.50d4a697.chunk.js"
