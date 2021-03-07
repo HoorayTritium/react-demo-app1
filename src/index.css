@@ -1,13 +1,354 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 全体的なリンク */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #00f;
+}
+
+a:visited {
+  color: #90f;
+}
+
+a:hover {
+  color: #f00;
+}
+
+a:active {
+  color: #f00;
+}
+
+body {
+  font-size: 90%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  text-align: left;
+  width: 100%;
+  max-width: 1000px;
+  /* min-width: 750px; */
+  margin: 0 auto;
+}
+
+#logout {
+  float: left;
+}
+
+#login {
+  text-align: right;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  background: url(https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/nYLlFBGTN94tbcA4jKZL/pub/d3PsLlagWT6TxffpUAdg.png)
+    center top / contain no-repeat;
+}
+#header:before {
+  content: "";
+  display: block;
+  padding-top: 20%;
+}
+#header:hover {
+  opacity: 0.9;
+}
+
+#header h1 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  vertical-align: top;
+  text-align: center;
+  margin: auto;
+  transform: translateX(-50%);
+  /* padding: 5px; */
+  text-shadow: 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff,
+    -2px -2px 1px #ffffff, 2px 0px 1px #ffffff, 0px 2px 1px #ffffff,
+    -2px 0px 1px #ffffff, 0px -2px 1px #ffffff;
+  text-decoration: none;
+}
+
+#main {
+  width: calc(75% - 10px);
+  margin: 10px 0px 10px 0px;
+  float: left;
+}
+
+#main a {
+  text-decoration: none;
+  color: black;
+}
+#main a:hover {
+  opacity: 0.5;
+}
+
+#container {
+  float: left;
+  width: 100%;
+}
+
+#side {
+  width: 25%;
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+
+#profile img {
+  max-width: 100px;
+  width: 30%;
+  height: auto;
+  float: right;
+}
+#iconImg {
+  max-width: 100px;
+  width: 30%;
+  height: auto;
+  float: right;
+}
+
+#page_navi {
+  clear: both;
+  text-align: center;
+}
+
+#footer {
+  clear: both;
+  height: 40px;
+  padding-top: 30px;
+}
+
+#footer p {
+  width: fit-content;
+  text-align: center;
+  color: #036;
+}
+
+#comment_form {
+  position: relative;
+  width: 80%;
+  margin: 40px 3%;
+}
+#comment_form .comment_form {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 2px 0 #707070 inset;
+  border-radius: 4px;
+}
+#comment_form .comment_form:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+.content {
+  margin-bottom: 20px;
+  text-align: left;
+  width: auto;
+  border: 1px solid darkgrey;
+}
+
+.maincontent {
+  font-size: 120%;
+}
+
+.entry_header {
+  background-color: aqua;
+  padding: 5px 0px 0px 15px;
+  margin: 0;
+  padding: 3px 5px;
+  border-color: #cccccc;
+  border-width: 1px 1px 1px 7px;
+  border-style: solid;
+  background: #f8f8f8;
+}
+
+.entry_header span {
+  position: relative;
+  float: right;
+  /* left: 10px; */
+  font-size: 15px;
+  font-weight: normal;
+  color: #555;
+}
+
+.entry_header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.entry_body {
+  padding: 5px 12px 0px 12px;
+}
+.entry_body hr {
+  clear: both;
+}
+.entry_body img {
+  width: 100%;
+}
+.entry_footer {
+  font-size: 90%;
+  text-align: right;
+  padding: 0px 12px 5px 12px;
+}
+
+.toTop {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: skyblue;
+}
+
+.toTop::before,
+.toTop::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.toTop::before {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid skyblue;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.toTop::after {
+  left: 4px;
+  width: 3px;
+  height: 3px;
+  border-top: 1px solid skyblue;
+  border-right: 1px solid skyblue;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.commnent_body {
+  padding: 5px 12px 0px 12px;
+  clear: both;
+}
+
+.comment_block hr {
+  /* padding: 0px 12px 5px 12px; */
+  color: #f00;
+}
+
+.comment_header {
+  padding-top: 1.5%;
+}
+
+.comment_header span {
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.comment_icon {
+  padding: 3px;
+  float: left;
+  width: 5%;
+}
+
+.noDecoration {
+  text-decoration: none;
+  color: black;
+}
+
+.ThumbnailImage {
+  float: left;
+  min-width: 250px;
+  width: 40%;
+  height: 200px;
+  padding: 5px 15px 5px 0px;
+  object-fit: cover;
+}
+
+.youtubeVideo {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.youtubeVideo iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* pc版 */
+@media screen and (min-width: 800px) {
+  .sp_only {
+    display: none;
+  }
+}
+
+/* mobile版 */
+@media screen and (max-width: 799px) {
+  .pc_only {
+    display: none;
+  }
+
+  #main {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    float: left;
+  }
+
+  #side {
+    width: 100%;
+    clear: both;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .ThumbnailImage {
+    float: left;
+    width: 100%;
+    height: 150px;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .comment_header {
+    padding-top: 4%;
+  }
+
+  .comment_icon {
+    width: 10%;
+  }
+}
+
+/* iPhone5/SE */
+@media screen and (max-width: 370px) {
+  #header h1 {
+    font-size: 1.5em;
+  }
 }
